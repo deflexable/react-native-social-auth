@@ -43,6 +43,8 @@ function configure(config: GoogleSignInConfig): void {
  * On both platforms, the SDK attempts silent restore of a previously authorized
  * account first, then falls back to the interactive bottom sheet / system sheet
  * if no authorized account is found.
+ * 
+ * On Android, this behavior can be customized by explicitly setting `autoSelect` or `filterByAuthorizedAccounts` in {@link configure}.
  *
  * @returns A {@link GoogleAuthCredential} containing the ID token, optional
  * access token, and user profile.
